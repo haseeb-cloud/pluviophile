@@ -1,46 +1,181 @@
-# Getting Started with Create React App
+# AI Rockfall Prediction & Alert Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive web-based dashboard for monitoring and predicting rockfall risks in open-pit mines using AI and real-time data analysis.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 🎯 Core Features
+- **File Upload**: Support for Digital Elevation Models (DEM) and drone images
+- **Risk Map Visualization**: Interactive map with color-coded risk zones
+- **Real-time Alerts**: Browser notifications and SMS integration via Twilio
+- **Analytics Dashboard**: Comprehensive charts and trend analysis
+- **Responsive Design**: Mobile-friendly interface
 
-### `npm start`
+### 🗺️ Risk Assessment
+- **Risk Levels**: High (Red), Moderate (Yellow), Low (Green)
+- **Environmental Factors**: Rainfall, temperature, slope angle, soil moisture
+- **Interactive Map**: Leaflet-based visualization with popup details
+- **Heatmap Display**: Visual representation of risk zones
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 📊 Analytics & Monitoring
+- **Trend Charts**: Risk level trends over time
+- **Factor Analysis**: Environmental factor impact analysis
+- **Alert Statistics**: Alert frequency and distribution
+- **Zone-based Analysis**: Risk distribution by mining zones
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 🔔 Alert System
+- **Browser Notifications**: Real-time popup alerts
+- **SMS Integration**: Twilio API for emergency notifications
+- **Alert Management**: Filter, sort, and manage alerts
+- **Risk Thresholds**: Configurable alert triggers
 
-### `npm test`
+## Technology Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React 18 with TypeScript
+- **Maps**: Leaflet.js with React-Leaflet
+- **Charts**: Recharts for data visualization
+- **Styling**: Custom CSS with responsive design
+- **State Management**: React Context API
+- **Icons**: Lucide React
 
-### `npm run build`
+## Installation & Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd rockfall-dashboard
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start development server**
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+4. **Open in browser**
+   Navigate to `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Usage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Dashboard Overview
+- View real-time risk statistics
+- Monitor alert counts and trends
+- Access quick insights and recommendations
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Upload Data
+- Drag and drop DEM files (.dem, .tif, .tiff)
+- Upload drone images (.jpg, .jpeg, .png)
+- Process and analyze uploaded data
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Risk Map
+- Interactive map with risk zone markers
+- Filter by risk level (High/Moderate/Low)
+- Click markers for detailed information
+- View environmental factors for each zone
 
-## Learn More
+### Alerts Management
+- View all active alerts
+- Filter by risk level and type
+- Send SMS notifications via Twilio
+- Manage alert preferences
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Analytics
+- Risk trend analysis over time
+- Environmental factor impact assessment
+- Alert frequency patterns
+- Zone-based risk distribution
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Settings
+- Configure notification preferences
+- Set risk thresholds
+- Map display options
+- Twilio SMS integration setup
+
+## Configuration
+
+### Twilio SMS Integration
+1. Sign up for Twilio account
+2. Get Account SID and Auth Token
+3. Purchase a phone number
+4. Enter credentials in Settings
+
+### Risk Thresholds
+- **High Risk**: 80% (default)
+- **Moderate Risk**: 50% (default)
+- **Low Risk**: 20% (default)
+
+### Map Settings
+- Auto-refresh interval: 30 seconds (default)
+- Heatmap display: Enabled
+- Marker display: Enabled
+
+## File Support
+
+### Supported File Types
+- **DEM Files**: .dem, .tif, .tiff
+- **Images**: .jpg, .jpeg, .png
+- **Maximum Size**: 100MB per file
+
+## API Integration
+
+The dashboard is designed to integrate with ML models for:
+- Risk probability calculation
+- Environmental factor analysis
+- Real-time data processing
+- Predictive analytics
+
+## Browser Compatibility
+
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+## Mobile Support
+
+- Responsive design for tablets and mobile devices
+- Touch-friendly interface
+- Optimized for landscape and portrait orientations
+
+## Development
+
+### Project Structure
+```
+src/
+├── components/          # React components
+│   ├── charts/         # Chart components
+│   └── ...
+├── context/            # React Context providers
+├── App.tsx            # Main application
+└── App.css            # Global styles
+```
+
+### Available Scripts
+- `npm start` - Start development server
+- `npm build` - Build for production
+- `npm test` - Run tests
+- `npm run eject` - Eject from Create React App
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+For support and questions, please contact the development team or create an issue in the repository.
+
+---
+
+**Note**: This is a demonstration dashboard with mock data. For production use, integrate with real ML models and data sources.
