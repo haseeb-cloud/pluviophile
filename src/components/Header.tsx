@@ -8,7 +8,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ alertCount = 0 }) => {
   return (
     <header className="header">
-      <h1>AI Rockfall Prediction & Alert System</h1>
+      <h1>OPenSentinels</h1>
       <div className="header-actions">
         <div className="alert-badge">
           {alertCount}
