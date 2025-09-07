@@ -1,33 +1,4 @@
-# AI Rockfall Prediction & Alert Dashboard
 
-A comprehensive web-based dashboard for monitoring and predicting rockfall risks in open-pit mines using AI and real-time data analysis.
-
-## Features
-
-### 🎯 Core Features
-- **File Upload**: Support for Digital Elevation Models (DEM) and drone images
-- **Risk Map Visualization**: Interactive map with color-coded risk zones
-- **Real-time Alerts**: Browser notifications and SMS integration via Twilio
-- **Analytics Dashboard**: Comprehensive charts and trend analysis
-- **Responsive Design**: Mobile-friendly interface
-
-### 🗺️ Risk Assessment
-- **Risk Levels**: High (Red), Moderate (Yellow), Low (Green)
-- **Environmental Factors**: Rainfall, temperature, slope angle, soil moisture
-- **Interactive Map**: Leaflet-based visualization with popup details
-- **Heatmap Display**: Visual representation of risk zones
-
-### 📊 Analytics & Monitoring
-- **Trend Charts**: Risk level trends over time
-- **Factor Analysis**: Environmental factor impact analysis
-- **Alert Statistics**: Alert frequency and distribution
-- **Zone-based Analysis**: Risk distribution by mining zones
-
-### 🔔 Alert System
-- **Browser Notifications**: Real-time popup alerts
-- **SMS Integration**: Twilio API for emergency notifications
-- **Alert Management**: Filter, sort, and manage alerts
-- **Risk Thresholds**: Configurable alert triggers
 
 ## Technology Stack
 
